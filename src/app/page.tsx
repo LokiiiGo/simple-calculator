@@ -84,7 +84,7 @@ export default function Home() {
     <p className="text-black">Resultado: <span className="underline">{resultado}</span></p>
   </div>
 
-  <footer className="mt-10 text-white">&copy; {new Date().getFullYear()} Simple Calculator</footer>
+  <footer className="mt-10 text-white">&copy; {new Date().getFullYear()} <a href='https://github.com/LokiiiGo/simple-calculator'>Simple Calculator</a></footer>
 </div>
   );
 }

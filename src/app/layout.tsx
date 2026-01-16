@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Calculadora Simples",
   description: "Uma calculadora para operações matemáticas simples.",
-  icons: "/asset/calculadora.png",
+  icons: "/asset/calculator.png",
 };
 
 export default function RootLayout({
