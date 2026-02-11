@@ -12,7 +12,7 @@ export default function Home() {
     const num2 = parseFloat(numero2.replace(',', '.'));
 
     if (isNaN(num1) || isNaN(num2)) {
-      alert('Entrada Inválida: Por favor, digite números válidos em ambos os campos.');
+      alert('Por favor, digite números válidos em ambos os campos.');
       return;
     }
 
@@ -43,7 +43,7 @@ export default function Home() {
     <div className="p-4 flex flex-col min-h-screen items-center justify-center bg-gray-900 text-white">
   <h1 className="text-2xl md:text-3xl mt-5 font-bold">Simple Calculator</h1>
   
-  <div className="border-t border-white w-full max-w-xs md:max-w-md mx-auto mb-6 mt-5"></div>
+  <hr className="border-t border-white w-full max-w-xs md:max-w-md mx-auto mb-6 mt-5"></hr>
 
   <div className="w-full max-w-md p-6 md:p-10 bg-amber-400 border-amber-50 border-2 rounded-2xl text-xl md:text-2xl font-bold text-center">
     <span className="block mb-4">Operações Matemáticas</span>
@@ -73,15 +73,15 @@ export default function Home() {
 
   <div className="mt-8 p-4 bg-amber-400 rounded-lg  border-amber-50 border-2 w-full max-w-md">
     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-      <button className="bg-white text-black py-4 rounded-md font-bold text-2xl hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('+')}>+</button>
-      <button className="bg-white text-black py-4 rounded-md font-bold text-2xl hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('-')}>-</button>
-      <button className="bg-white text-black py-4 rounded-md font-bold text-2xl hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('*')}>*</button>
-      <button className="bg-white text-black py-4 rounded-md font-bold text-2xl hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('/')}>/</button>
+      <button className="bg-white text-black py-4 rounded-md font-bold text-2xl cursor-pointer hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('+')}>+</button>
+      <button className="bg-white text-black py-4 rounded-md font-bold text-2xl cursor-pointer hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('-')}>-</button>
+      <button className="bg-white text-black py-4 rounded-md font-bold text-2xl cursor-pointer hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('*')}>*</button>
+      <button className="bg-white text-black py-4 rounded-md font-bold text-2xl cursor-pointer hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('/')}>/</button>
     </div>
   </div>
 
   <div className="mt-8 p-6 bg-amber-400 rounded-lg font-bold text-2xl  border-amber-50 border-2 w-full max-w-md text-center">
-    <p className="text-black">Resultado: <span className="underline">{resultado}</span></p>
+    <p className="text-black">Resultado: {resultado}</p>
   </div>
 
   <footer className="mt-10 text-white">&copy; {new Date().getFullYear()} <a href='https://github.com/LokiiiGo/simple-calculator'>Simple Calculator</a></footer>
