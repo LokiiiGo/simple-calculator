@@ -40,7 +40,7 @@ export default function Calcular() {
         setResultado(calculoFinal);
     };
     return (
-        <div className="p-4 flex flex-col min-h-screen items-center justify-center bg-gray-900 text-white">
+        <div className="roboto-condensed p-4 flex flex-col min-h-screen items-center justify-center bg-gray-950 text-white">
             <h1 className="text-2xl md:text-3xl mt-5 font-bold">Simple Calculator</h1>
 
             <hr className="border-t border-white w-full max-w-xs md:max-w-md mx-auto mb-6 mt-5"></hr>
@@ -75,7 +75,7 @@ export default function Calcular() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                     <button className="bg-white text-black py-4 rounded-md font-bold text-2xl cursor-pointer hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('+')}>+</button>
                     <button className="bg-white text-black py-4 rounded-md font-bold text-2xl cursor-pointer hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('-')}>-</button>
-                    <button className="bg-white text-black py-4 rounded-md font-bold text-2xl cursor-pointer hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('*')}>*</button>
+                    <button className="bg-white text-black py-4 rounded-md font-bold text-2xl cursor-pointer hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('*')}>x</button>
                     <button className="bg-white text-black py-4 rounded-md font-bold text-2xl cursor-pointer hover:bg-gray-200 transition-colors" onClick={() => handleCalcular('/')}>/</button>
                 </div>
             </div>
@@ -84,7 +84,7 @@ export default function Calcular() {
                 <p className="text-black">Resultado: {resultado}</p>
             </div>
 
-            <footer className="mt-10 text-white">&copy; {new Date().getFullYear()} <a href='https://github.com/LokiiiGo/simple-calculator'>Simple Calculator</a></footer>
+            <footer className="mt-10 text-white">&copy; {new Date().getFullYear()} <a href='https://github.com/LokiiiGo/simple-calculator'>Simple Calculator - Desenvolvido por Lucas Chambi</a></footer>
         </div>
     )
 };
